@@ -120,91 +120,92 @@ export function Hero() {
                     </motion.div>
 
                     <div className="relative h-[250px] md:h-[600px] mt-8 md:mt-12 order-1 lg:order-2">
-                        {/* 3D Screens Container */}
-                        <motion.div
-                            className="relative w-full h-full perspective-1000 scale-[0.3] md:scale-100 origin-top translate-x-8 md:translate-x-0"
-                            animate={{ y: [0, -10, 0] }}
-                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                        >
-                            <div className="relative w-full h-full" style={{ perspective: '1200px' }}>
-                                <motion.div
-                                    initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
-                                    animate={{ opacity: 1, rotateY: -12, rotateX: 2 }}
-                                    transition={{ duration: 1, delay: 0.6 }}
-                                    style={{
-                                        transform: 'perspective(1200px) rotateY(-12deg) rotateX(2deg)',
-                                        transformStyle: 'preserve-3d'
-                                    }}
-                                    className="absolute top-16 right-72 w-[230px] opacity-90"
-                                >
-                                    <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
-                                        <img
-                                            src="/mockups/hero-back.png"
-                                            alt="Activity Selection"
-                                            className="w-full h-auto"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
-                                    </div>
-                                </motion.div>
-
-                                <motion.div
-                                    initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
-                                    animate={{ opacity: 1, rotateY: -10, rotateX: 3 }}
-                                    transition={{ duration: 1, delay: 0.5 }}
-                                    style={{
-                                        transform: 'perspective(1200px) rotateY(-10deg) rotateX(3deg) translateZ(20px)',
-                                        transformStyle: 'preserve-3d'
-                                    }}
-                                    className="absolute top-4 right-36 w-[246px] opacity-95 z-10"
-                                >
-                                    <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
-                                        <img
-                                            src="/mockups/hero-front.png"
-                                            alt="Goal Creation"
-                                            className="w-full h-auto"
-                                        />
-                                        <div className="absolute inset-0 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] pointer-events-none" />
-                                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
-                                    </div>
-                                </motion.div>
-
-                                <motion.div
-                                    initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
-                                    animate={{ opacity: 1, rotateY: -8, rotateX: 5 }}
-                                    transition={{ duration: 1, delay: 0.4 }}
-                                    style={{
-                                        transform: 'perspective(1200px) rotateY(-8deg) rotateX(5deg) translateZ(40px)',
-                                        transformStyle: 'preserve-3d',
-                                        filter: 'drop-shadow(0 25px 50px rgba(0,0,0,0.3))'
-                                    }}
-                                    className="absolute -top-10 right-0 w-[262px] z-20"
-                                >
-                                    <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/20">
-                                        <img
-                                            src="/mockups/hero-middle.png"
-                                            alt="Reclaim Profile"
-                                            className="w-full h-auto"
-                                        />
-                                        <div className="absolute inset-0 shadow-[0_0_80px_rgba(92,135,124,0.2)] pointer-events-none" />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-white/10 pointer-events-none" />
-                                    </div>
-                                </motion.div>
-
-                                <motion.div
-                                    animate={{ y: [0, -15, 0] }}
-                                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                    className="absolute -right-8 -top-20 md:-top-12 z-30"
-                                >
-                                    <div className="w-32 h-32 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 shadow-glass flex items-center justify-center">
-                                        <div className="text-center">
-                                            <Sparkles className="w-8 h-8 mx-auto mb-2 text-white" />
-                                            <span className="text-xs font-medium text-white/90">AI-Powered</span>
+                        {/* 3D Screens Container - Wrapper for scaling/positioning */}
+                        <div className="relative w-full h-full scale-[0.3] md:scale-100 origin-top translate-x-8 md:translate-x-0">
+                            <motion.div
+                                className="relative w-full h-full perspective-1000"
+                                animate={{ y: [0, -10, 0] }}
+                                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                            >
+                                <div className="relative w-full h-full" style={{ perspective: '1200px' }}>
+                                    <motion.div
+                                        initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
+                                        animate={{ opacity: 1, rotateY: -12, rotateX: 2 }}
+                                        transition={{ duration: 1, delay: 0.6 }}
+                                        style={{
+                                            transform: 'perspective(1200px) rotateY(-12deg) rotateX(2deg)',
+                                            transformStyle: 'preserve-3d'
+                                        }}
+                                        className="absolute top-16 right-72 w-[230px] opacity-90"
+                                    >
+                                        <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
+                                            <img
+                                                src="/mockups/hero-back.png"
+                                                alt="Activity Selection"
+                                                className="w-full h-auto"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
                                         </div>
-                                    </div>
-                                </motion.div>
+                                    </motion.div>
 
-                            </div>
-                        </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
+                                        animate={{ opacity: 1, rotateY: -10, rotateX: 3 }}
+                                        transition={{ duration: 1, delay: 0.5 }}
+                                        style={{
+                                            transform: 'perspective(1200px) rotateY(-10deg) rotateX(3deg) translateZ(20px)',
+                                            transformStyle: 'preserve-3d'
+                                        }}
+                                        className="absolute top-4 right-36 w-[246px] opacity-95 z-10"
+                                    >
+                                        <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
+                                            <img
+                                                src="/mockups/hero-front.png"
+                                                alt="Goal Creation"
+                                                className="w-full h-auto"
+                                            />
+                                            <div className="absolute inset-0 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] pointer-events-none" />
+                                            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+                                        </div>
+                                    </motion.div>
+
+                                    <motion.div
+                                        initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
+                                        animate={{ opacity: 1, rotateY: -8, rotateX: 5 }}
+                                        transition={{ duration: 1, delay: 0.4 }}
+                                        style={{
+                                            transform: 'perspective(1200px) rotateY(-8deg) rotateX(5deg) translateZ(40px)',
+                                            transformStyle: 'preserve-3d',
+                                            filter: 'drop-shadow(0 25px 50px rgba(0,0,0,0.3))'
+                                        }}
+                                        className="absolute -top-10 right-0 w-[262px] z-20"
+                                    >
+                                        <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/20">
+                                            <img
+                                                src="/mockups/hero-middle.png"
+                                                alt="Reclaim Profile"
+                                                className="w-full h-auto"
+                                            />
+                                            <div className="absolute inset-0 shadow-[0_0_80px_rgba(92,135,124,0.2)] pointer-events-none" />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-white/10 pointer-events-none" />
+                                        </div>
+                                    </motion.div>
+
+                                    <motion.div
+                                        animate={{ y: [0, -15, 0] }}
+                                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                        className="absolute -right-8 -top-20 md:-top-12 z-30"
+                                    >
+                                        <div className="w-32 h-32 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 shadow-glass flex items-center justify-center">
+                                            <div className="text-center">
+                                                <Sparkles className="w-8 h-8 mx-auto mb-2 text-white" />
+                                                <span className="text-xs font-medium text-white/90">AI-Powered</span>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                </div>
+                            </motion.div>
+                        </div>
 
                         {/* Floating Cards (Unlocked from 3D perspective on mobile) */}
                         <motion.div
