@@ -16,8 +16,9 @@ export function InteractiveBackground() {
 
     // Parallax transforms
     // Background moves slightly opposite to mouse
-    const bgX = useTransform(springX, [-0.5, 0.5], ["-15px", "15px"]);
-    const bgY = useTransform(springY, [-0.5, 0.5], ["-15px", "15px"]);
+    // Output numbers instead of strings to avoid type conflicts with static 0
+    const bgX = useTransform(springX, [-0.5, 0.5], [-15, 15]);
+    const bgY = useTransform(springY, [-0.5, 0.5], [-15, 15]);
 
     useEffect(() => {
         const checkMobile = () => {
@@ -45,7 +46,7 @@ export function InteractiveBackground() {
     }, [mouseX, mouseY]);
 
     return (
-        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none bg-cream">
+        <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none bg-cream">
             {/* Parallax Background Layer */}
             <motion.div
                 className="absolute inset-[-20px] w-[calc(100%+40px)] h-[calc(100%+40px)]"
