@@ -194,7 +194,7 @@ export function Hero() {
                                     <motion.div
                                         animate={{ y: [0, -15, 0] }}
                                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                        className="absolute -right-8 -top-20 md:-top-12 z-30"
+                                        className="absolute right-0 md:-right-8 -top-20 md:-top-12 z-30"
                                     >
                                         <div className="w-32 h-32 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 shadow-glass flex items-center justify-center">
                                             <div className="text-center">
