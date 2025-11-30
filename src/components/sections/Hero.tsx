@@ -21,7 +21,7 @@ export function Hero() {
         <section className="relative min-h-screen flex items-center justify-center pt-24 md:pt-32 pb-12 md:pb-20 px-4 md:px-6 overflow-hidden">
             {/* Logo Intro Layer */}
             <motion.div
-                className="absolute inset-0 z-40 hidden md:flex items-center justify-center bg-cream"
+                className="absolute inset-0 z-40 flex items-center justify-center bg-cream"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: introComplete ? 0 : 1 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -119,7 +119,7 @@ export function Hero() {
                         </div>
                     </motion.div>
 
-                    <div className="relative h-[400px] md:h-[600px] perspective-1000 mt-12 scale-75 md:scale-100 origin-top order-1 lg:order-2">
+                    <div className="relative h-[350px] md:h-[600px] perspective-1000 mt-8 md:mt-12 scale-[0.6] md:scale-100 origin-top order-1 lg:order-2 translate-x-4 md:translate-x-0">
                         <div className="relative w-full h-full" style={{ perspective: '1200px' }}>
                             <motion.div
                                 initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
@@ -187,7 +187,7 @@ export function Hero() {
                             <motion.div
                                 animate={{ y: [0, -15, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute -right-8 -top-12 z-30"
+                                className="absolute -right-8 -top-20 md:-top-12 z-30"
                             >
                                 <div className="w-32 h-32 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 shadow-glass flex items-center justify-center">
                                     <div className="text-center">
@@ -200,7 +200,7 @@ export function Hero() {
                             <motion.div
                                 animate={{ y: [0, 20, 0] }}
                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                className="absolute left-0 bottom-20 z-40"
+                                className="absolute left-0 bottom-10 md:bottom-20 z-40"
                             >
                                 <div className="w-56 h-auto bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/20 p-4">
                                     <div className="flex items-center justify-between mb-3">
