@@ -119,10 +119,10 @@ export function Hero() {
                         </div>
                     </motion.div>
 
-                    <div className="relative h-[350px] md:h-[600px] mt-8 md:mt-12 order-1 lg:order-2">
+                    <div className="relative h-[250px] md:h-[600px] mt-8 md:mt-12 order-1 lg:order-2">
                         {/* 3D Screens Container */}
                         <motion.div
-                            className="relative w-full h-full perspective-1000 scale-[0.45] md:scale-100 origin-top translate-x-8 md:translate-x-0"
+                            className="relative w-full h-full perspective-1000 scale-[0.3] md:scale-100 origin-top translate-x-8 md:translate-x-0"
                             animate={{ y: [0, -10, 0] }}
                             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                         >
