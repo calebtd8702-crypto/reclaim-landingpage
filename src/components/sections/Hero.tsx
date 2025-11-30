@@ -119,9 +119,9 @@ export function Hero() {
                         </div>
                     </motion.div>
 
-                    <div className="relative h-[250px] md:h-[600px] mt-8 md:mt-12 order-1 lg:order-2">
+                    <div className="relative h-[450px] md:h-[600px] mt-8 md:mt-12 order-1 lg:order-2">
                         {/* 3D Screens Container - Wrapper for scaling/positioning */}
-                        <div className="relative w-full h-full scale-[0.3] md:scale-100 origin-top translate-x-8 md:translate-x-0">
+                        <div className="relative w-full h-full scale-[0.75] md:scale-100 origin-top">
                             <motion.div
                                 className="relative w-full h-full perspective-1000"
                                 animate={{ y: [0, -10, 0] }}
@@ -211,7 +211,7 @@ export function Hero() {
                         <motion.div
                             animate={{ y: [0, 20, 0] }}
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                            className="absolute left-4 bottom-0 md:left-0 md:bottom-20 z-40 scale-90 md:scale-100 origin-bottom-left"
+                            className="absolute left-4 bottom-0 md:left-0 md:bottom-20 z-40 scale-[0.7] md:scale-100 origin-bottom-left"
                         >
                             <div className="w-56 h-auto bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/20 p-4">
                                 <div className="flex items-center justify-between mb-3">
