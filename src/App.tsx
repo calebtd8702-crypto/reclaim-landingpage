@@ -7,6 +7,7 @@ import { HowItWorks } from "./components/sections/HowItWorks"
 import { SocialProof } from "./components/sections/SocialProof"
 import { EmailSignup } from "./components/sections/EmailSignup"
 import { InteractiveBackground } from "./components/layout/InteractiveBackground"
+import { StaticBackground } from "./components/layout/StaticBackground"
 import { StillnessSection } from "./components/sections/StillnessSection"
 import { CursorTrail } from "./components/ui/CursorTrail"
 
@@ -26,7 +27,7 @@ function App() {
   return (
     <div className="min-h-screen relative selection:bg-sage/30 selection:text-sage-dark font-sans text-black">
       <CursorTrail />
-      {isDesktop && <InteractiveBackground />}
+      {isDesktop ? <InteractiveBackground /> : <StaticBackground />}
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">

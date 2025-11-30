@@ -88,7 +88,7 @@ export function Hero() {
                     transition={{ duration: 0.8 }}
                 >
                     <motion.div
-                        className="text-center lg:text-left space-y-8"
+                        className="text-center lg:text-left space-y-8 order-2 lg:order-1"
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -119,7 +119,7 @@ export function Hero() {
                         </div>
                     </motion.div>
 
-                    <div className="relative h-[600px] hidden lg:block perspective-1000 mt-12">
+                    <div className="relative h-[400px] md:h-[600px] perspective-1000 mt-12 scale-75 md:scale-100 origin-top order-1 lg:order-2">
                         <div className="relative w-full h-full" style={{ perspective: '1200px' }}>
                             <motion.div
                                 initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
