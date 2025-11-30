@@ -21,7 +21,7 @@ export function Hero() {
         <section className="relative min-h-screen flex items-center justify-center pt-24 md:pt-32 pb-12 md:pb-20 px-4 md:px-6 overflow-hidden">
             {/* Logo Intro Layer */}
             <motion.div
-                className="absolute inset-0 z-40 flex items-center justify-center bg-cream"
+                className="absolute inset-0 z-40 hidden md:flex items-center justify-center bg-cream"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: introComplete ? 0 : 1 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
