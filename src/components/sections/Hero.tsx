@@ -121,7 +121,7 @@ export function Hero() {
 
                     <div className="relative h-[450px] md:h-[600px] mt-8 md:mt-12 order-1 lg:order-2">
                         {/* 3D Screens Container - Wrapper for scaling/positioning */}
-                        <div className="relative w-full h-full scale-[0.75] md:scale-100 origin-top translate-x-12 md:translate-x-0">
+                        <div className="relative w-full h-full scale-[0.7] md:scale-100 origin-top translate-x-16 md:translate-x-0">
                             <motion.div
                                 className="relative w-full h-full perspective-1000"
                                 animate={{ y: [0, -10, 0] }}
