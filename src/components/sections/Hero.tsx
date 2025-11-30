@@ -119,7 +119,7 @@ export function Hero() {
                         </div>
                     </motion.div>
 
-                    <div className="relative h-[600px] hidden lg:block perspective-1000">
+                    <div className="relative h-[600px] hidden lg:block perspective-1000 mt-12">
                         <div className="relative w-full h-full" style={{ perspective: '1200px' }}>
                             <motion.div
                                 initial={{ opacity: 0, rotateY: -20, rotateX: 10 }}
