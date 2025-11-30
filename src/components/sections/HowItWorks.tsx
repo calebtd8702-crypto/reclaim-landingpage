@@ -21,20 +21,20 @@ const steps = [
 
 export function HowItWorks() {
     return (
-        <section id="how-it-works" className="py-24 relative overflow-hidden text-white">
+        <section id="how-it-works" className="py-16 md:py-24 relative overflow-hidden text-white">
             <div className="absolute inset-0 bg-sage/90 backdrop-blur-sm -z-10" />
 
-            <div className="container max-w-6xl mx-auto px-6">
-                <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-3xl lg:text-4xl font-bold font-heading mb-4">How It Works</h2>
-                    <p className="text-white/80 text-lg">Three simple steps to a more productive you.</p>
+            <div className="container max-w-6xl mx-auto px-4 md:px-6">
+                <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading mb-3 md:mb-4">How It Works</h2>
+                    <p className="text-white/80 text-base md:text-lg">Three simple steps to a more productive you.</p>
                 </div>
 
                 <div className="relative">
                     {/* Connecting Line (Desktop) */}
                     <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 
-                    <div className="grid md:grid-cols-3 gap-12 relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative z-10">
                         {steps.map((step, index) => (
                             <motion.div
                                 key={index}

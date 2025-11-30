@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function Navbar() {
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 border-b border-white/10 bg-[#fbf6e8]/30 backdrop-blur-md transition-all duration-300">
+        <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 py-3 md:py-4 border-b border-white/10 bg-[#fbf6e8]/30 backdrop-blur-md transition-all duration-300">
             {/* Drifting Fog Layer (Desktop Only) */}
             <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden md:block rounded-b-xl">
                 <motion.div
@@ -20,17 +20,20 @@ export function Navbar() {
                     className="flex items-center gap-2 cursor-pointer"
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 >
-                    <Logo variant="color" size="medium" />
-                    <span className="text-xl font-bold font-heading tracking-tight text-black">Reclaim</span>
+                    <Logo variant="color" size="small" className="md:hidden" />
+                    <Logo variant="color" size="medium" className="hidden md:block" />
+                    <span className="text-lg md:text-xl font-bold font-heading tracking-tight text-black">Reclaim</span>
                 </div>
-                <div className="hidden md:flex items-center gap-8">
-                    <a href="#features" className="text-sm font-medium text-black/60 hover:text-black transition-colors">Features</a>
-                    <a href="#how-it-works" className="text-sm font-medium text-black/60 hover:text-black transition-colors">How it Works</a>
+                <div className="flex items-center gap-4 md:gap-8">
+                    <div className="hidden md:flex items-center gap-8">
+                        <a href="#features" className="text-sm font-medium text-black/60 hover:text-black transition-colors">Features</a>
+                        <a href="#how-it-works" className="text-sm font-medium text-black/60 hover:text-black transition-colors">How it Works</a>
+                    </div>
                     <motion.div
                         animate={{ scale: [1, 1.02, 1] }}
                         transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
                     >
-                        <Button variant="default" size="sm" className="rounded-full shadow-lg shadow-sage/20" onClick={() => document.getElementById('signup')?.scrollIntoView({ behavior: 'smooth' })}>
+                        <Button variant="default" size="sm" className="rounded-full shadow-lg shadow-sage/20 text-xs md:text-sm px-3 md:px-4" onClick={() => document.getElementById('signup')?.scrollIntoView({ behavior: 'smooth' })}>
                             Get Early Access
                         </Button>
                     </motion.div>

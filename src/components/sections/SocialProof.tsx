@@ -21,16 +21,16 @@ const testimonials = [
 
 export function SocialProof() {
     return (
-        <section className="py-24">
-            <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold font-heading mb-4 text-black">Trusted by people who wanted their time back</h2>
+        <section className="py-16 md:py-24">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center mb-12 md:mb-16">
+                    <h2 className="text-2xl md:text-3xl font-bold font-heading mb-3 md:mb-4 text-black">Trusted by people who wanted their time back</h2>
                     <div className="flex justify-center gap-2 text-sage">
                         {/* Add stars or other elements if needed, otherwise just the text is fine */}
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {testimonials.map((testimonial, index) => (
                         <motion.div
                             key={index}

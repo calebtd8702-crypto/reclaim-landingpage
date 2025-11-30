@@ -22,14 +22,14 @@ const features = [
 
 export function Features() {
     return (
-        <section id="features" className="py-24 relative">
-            <div className="container max-w-6xl mx-auto px-6">
-                <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-3xl lg:text-4xl font-bold font-heading mb-4 text-black">What Reclaim Does</h2>
-                    <p className="text-black/70 text-lg">Everything you need to take back control of your day.</p>
+        <section id="features" className="py-16 md:py-24 relative">
+            <div className="container max-w-6xl mx-auto px-4 md:px-6">
+                <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading mb-3 md:mb-4 text-black">What Reclaim Does</h2>
+                    <p className="text-black/70 text-base md:text-lg">Everything you need to take back control of your day.</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}

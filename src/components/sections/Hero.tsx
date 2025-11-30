@@ -18,7 +18,7 @@ export function Hero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center pt-24 md:pt-32 pb-12 md:pb-20 px-4 md:px-6 overflow-hidden">
             {/* Logo Intro Layer */}
             <motion.div
                 className="absolute inset-0 z-40 flex items-center justify-center bg-cream"
@@ -103,12 +103,12 @@ export function Hero() {
                             <span className="text-sm font-medium text-sage-dark">Reclaim 1.0 is here</span>
                         </motion.div>
 
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-sage-dark text-balance font-heading drop-shadow-sm">
-                            You deserve to live life in the <br />
+                        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-sage-dark text-balance font-heading drop-shadow-sm">
+                            You deserve to live life in the <br className="hidden md:block" />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sage to-sage-dark">real world.</span>
                         </h1>
 
-                        <p className="text-xl text-sage-dark/80 max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow-sm">
+                        <p className="text-lg md:text-xl text-sage-dark/80 max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow-sm">
                             Most apps push you to do more and keep you glued to your phone. Reclaim does the opposite. We help you step away, reset your mind, and stay focused on what actually matters.
                         </p>
 
